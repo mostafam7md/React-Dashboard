@@ -1,0 +1,58 @@
+{
+  "name": "react-dashboard",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "@tanstack/react-query": "^5.51.1",
+    "@tanstack/react-query-devtools": "^5.51.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.1",
+    "react-router-dom": "^6.26.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^20.16.10",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.9",
+    "vitest": "^2.1.4",
+    "@vitejs/plugin-react": "^4.3.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": { "browser": true, "es2021": true, "node": true },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
+    "plugins": ["@typescript-eslint", "react", "react-hooks"],
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+    "settings": { "react": { "version": "detect" } },
+    "rules": { "react/react-in-jsx-scope": "off", "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }] }
+  },
+  "prettier": { "semi": true, "singleQuote": false, "trailingComma": "all", "printWidth": 100 },
+  "vitest": { "environment": "jsdom", "globals": true }
+}
